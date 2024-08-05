@@ -1,0 +1,225 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .top-banner {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .top-banner p {
+    margin: auto;
+  }
+  
+  .top-banner a {
+    color: #ff6347;
+    text-decoration: none;
+    margin-left: 0.5rem;
+  }
+  
+  .close-banner {
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 900;
+  }
+  .logo-link {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: none;
+    list-style: none;
+    cursor: pointer;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: #018dff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6347;
+  }
+  
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eaeaea;
+    border-radius: 2rem;
+  }
+  
+  .search-container input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 5rem;
+    background-color: #eaeaea;
+    border-radius: 2rem;
+  }
+  
+  .search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;    
+    color: #000;
+  }
+  
+ 
+  .nav-icons a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: color 0.3s;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+  }
+  
+  .nav-icons a:hover {
+    color: #ff6347;
+  }
+  
+
+  @media (max-width: 768px) {
+    .main-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links li {
+      margin: 0.5rem 0;
+    }
+  
+    .search-container {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .nav-icons {
+      margin-top: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  
+.active__link{
+  position: relative;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.active__link::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 2;
+  border-radius: 10px;
+  width: calc(100% + 4px);
+  height: calc(100% - -2px);
+  background-color: #2121217b;
+  transition: 0.5s ease-out;
+  transform: scaleX(1);
+}
+
+.active__link::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #212121;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+.active__link:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+.active__link:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.active__link:hover {
+  border: 2px solid #fefefe;
+}
+
+.active__link span {
+  position: relative;
+  z-index: 3;
+}
+
+
+
+.nav-icons a {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}

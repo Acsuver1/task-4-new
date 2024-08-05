@@ -1,0 +1,37 @@
+.text__dress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+}   
+.dress__img img{
+    object-fit: cover;
+    padding: 20px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dress__img img:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    border-radius: 20px;
+}
+.dress__wrapper{
+    background-color: #F0F0F0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.our{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+}

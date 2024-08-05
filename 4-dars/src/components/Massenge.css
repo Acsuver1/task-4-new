@@ -1,0 +1,52 @@
+
+.commit {
+    display: flex; /* Align cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align cards horizontally */
+    padding: 20px; /* Padding around the container */
+}
+
+.commit-cards {
+    width: 280px; /* Fixed width of the card */
+    border: 1px solid #ddd; /* Border around the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    background-color: #fff; /* Background color of the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
+    text-align: center; /* Center align text inside the card */
+    position: relative; /* Position context for absolute children */
+    overflow: hidden; /* Hide content that overflows the card */
+    cursor: pointer;
+    margin: 50px 0;
+}
+
+
+.commit-cards img {
+    width: 40px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.commit-cards h1 {
+    font-size: 1.2em; 
+    margin: 10px 0;
+    color: #333; 
+}
+
+
+.commit-cards p {
+    margin: 10px 0; 
+    color: #666; 
+}
+
+
+.commit-cards p.email {
+    font-style: italic; 
+}
+
+.our{
+    margin-top: 50px;
+}
